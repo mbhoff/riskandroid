@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.sdsmt.team4.MobileProject2.CaptureActivity">
+
+    <TextView
+        android:id="@+id/PlayerTurn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/CaptureSelection"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/CaptureSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/CaptureButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PlayerTurn"
+        app:layout_constraintVertical_weight="3">
+
+        <RadioButton
+            android:id="@+id/PointCaptureSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:checked="true"
+            android:layoutDirection="rtl"
+            android:text="@string/PointCapture"
+            android:textAlignment="textStart" />
+
+        <RadioButton
+            android:id="@+id/LineCaptureSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:layoutDirection="rtl"
+            android:text="@string/LineCapture"
+            android:textAlignment="textStart" />
+
+        <RadioButton
+            android:id="@+id/RectCaptureSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:layoutDirection="rtl"
+            android:text="@string/RectangularCapture"
+            android:textAlignment="textStart" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/CaptureButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="onNextButtonClick"
+        android:text="@string/SelectCapture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CaptureSelection"
+        app:layout_constraintVertical_weight="1" />
+</android.support.constraint.ConstraintLayout>

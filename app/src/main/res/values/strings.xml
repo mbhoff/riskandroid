@@ -1,0 +1,53 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">G4 Sudo-Risk</string>
+    <string name="PointCapture">Point Capture</string>
+    <string name="LineCapture">Line Capture</string>
+    <string name="RectangularCapture">Rectangular Capture</string>
+    <string name="Capture">Capture</string>
+    <string name="EndTurn">End Turn</string>
+    <string name="PlayAgain">Play Again</string>
+    <string name="PlayerTurn">Round %1$d</string>
+    <string name="SelectCapture">Select Capture</string>
+    <string name="Error">Error</string>
+    <string name="winning_msg">You Win</string>
+    <string name="losing_msg">You Lose</string>
+    <string name="score_string" tools:ignore="PluralsCandidate">%1$s Scored %2$d Points</string>
+    <string name="MonitorScoreString" tools:ignore="PluralsCandidate">%1$s Score is %2$d Points</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="back_title">Quit to Main Menu</string>
+    <string name="back_msg">Return to the Main Menu?</string>
+    <string name="help">Help</string>
+    <string name="help_msg" formatted="false">How to Play:\n1. Enter player names and number of game rounds and press begin.\n
+        2. On the capture screen select a shape.\n
+        3. A point will always capture a single tile on the gameboard.\n
+        4. A line will capture 50% of the tiles it touches on the gameboard.\n
+        5. A rectangle will capture 25% of tiles within it at normal size but its probability of capture will decrease as its size is increased.\n
+        6. The player with the most captured tiles after the final round is the winner.</string>
+    <string name="wait">Wait</string>
+    <string name="password">Password</string>
+    <string name="enter_pass_again">Please enter your password again</string>
+    <string name="opponentShapeLabel">Opponent Shape</string>
+    <string name="create_account">Create Account</string>
+    <string name="create_account_toast">User Account Created</string>
+    <string name="passwords_do_not_match">The entered passwords do not match.</string>
+    <string name="no_name_entered">You did not enter a user name.</string>
+    <string name="login">Login</string>
+    <string name="no_password_entered">You did not enter a password.</string>
+    <string name="MonitorNext">Next</string>
+    <string name="error_username_format">Please enter a username in the form of an email.\n\nEx: catlover42@meow.com</string>
+    <string name="email">E-Mail</string>
+    <string name="Name_of_You">You</string>
+    <string name="Name_of_Your">Your</string>
+    <string name="Name_of_They">They</string>
+    <string name="Name_of_Their">Their</string>
+    <string name="MonitorTitle">Opponent Monitor</string>
+    <string name="Point">Point</string>
+    <string name="Line">Line</string>
+    <string name="Rectangle">Rectangle</string>
+	<string name="CaptureActivity">Capture Activity</string>
+    <string name="GameActivity">Game Activity</string>
+    <string name="OpponentActivity">Opponent Activity</string>
+    <string name="OpponentScore">Opponent Score</string>
+    <string name="PlayerScore">Player Score</string>
+</resources>
